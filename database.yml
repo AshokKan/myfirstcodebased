@@ -1,0 +1,16 @@
+---
+development:
+  adapter: postgresql
+  host: localhost
+  username: mrosa
+  database: routes_api_development
+test:
+  adapter: postgresql
+  host: localhost
+  username: postgres
+  database: routes_api_test
+production:
+  adapter: postgresql
+  username: routes-api
+  password: <%= ENV['ROUTES-API_DATABASE_PASSWORD'] %>
+  database: routes-api_production
